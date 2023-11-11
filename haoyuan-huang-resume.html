@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haoyuan (Alfred) Huang - Software Engineer Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #resume-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center; 
+            display: block;
+        }
+        h1.title {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subtitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subtitle span {
+            display: inline-block;
+        }
+
+        h1 img {
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="resume-container">
+        <h1 class="title">
+
+        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/10549856_941202399245961_1967817981_a.jpg?stp=dst-jpg_s200x200&_nc_cat=105&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=BFxLlfWtYQgAX94O8YV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=00_AfAg00_5LR3NWJqh_0FyfRMm_C0xO7ZaZeZKzOc_J_HAww&oe=6553F8C8" alt="Avatar" width="50" height="50">
+
+        Haoyuan (Alfred) Huang</h1>
+
+        <p class="subtitle">
+        <span>Mountain View, CA, USA</span>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span class="markdown-text">[LinkedIn](https://www.linkedin.com/in/haoyuanh)</span>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span class="markdown-text">[GitHub](https://github.com/alfredaria)</span>
+        </p>
+
+        <div class="section">
+            <h2>Career Objective</h2>
+            <p class="markdown-text">
+- Continue to advance in the software industry as an individual contributor, with a focus on developing infrastructures.</p>
+        </div>
+
+        <div class="section">
+            <h2>Industrial Experience</h2>
+            <p><strong>Software Engineer V</strong>, Google, Mountain View | Sept 2020 - Now</p>
+            <p class="markdown-text">
+- _Fullstack development, Java, TypeScript, C++, GRPCs, Proto Buffers_
+- [Lodging Search](https://www.google.com/search?q=hotels+near+me) 1st party feature design, development, testing, live experiments and launches
+- Infrastructure migrations in response to legal requirements
+- Serving flow critical path latency and capacity optimizations
+            </p>
+
+            <p><strong>Software Engineer</strong>, Google, Mountain View | Feb 2017 - Sep 2020</p>
+            <p class="markdown-text">
+- Feature development to improve search results diversity and reduce user frictions
+            </p>
+
+            <p><strong>Software Engineer Intern</strong>, Amazon, Seattle | Jun 2016 - Aug 2016</p>
+            <p class="markdown-text">
+- _Web Development, Dashboarding_
+            </p>
+            <!-- Repeat the above block for each relevant job experience -->
+
+            <p><strong>Developer</strong>, PCCW, Hong Kong | Sept 2014 - Aug 2015</p>
+            <p class="markdown-text">
+- _Web Development, Dashboarding_
+            </p>
+
+            <p><strong>Embedded Systems Development Undergraduate Intern</strong>, Creaxon, Hong Kong | Jul 2012 - Aug 2013</p>
+            <p class="markdown-text">
+- _Web Development, Dashboarding_
+            </p>
+            <!-- Repeat the above block for each relevant job experience -->
+        </div>
+
+        <div class="section">
+            <h2>Skill Sets</h2>
+            <p class="markdown-text">
+- Programming languages (Sorted by frequency): Java, TypeScript, C++, Python, Golang
+- Frameworks (Sorted by frequency): Wiz (Google proprietary), React.js
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>M.S. in Software Engineering</strong>, Carnegie Mellon University, Sep 2015 - Dec 2016</p>
+            <p><strong>B.S. in Electronic and Computers Engineering</strong>, The Hong Kong Polytechnic University, Sep 2011 - Jun 2012 & Sep 2013 - Jun 2014</p>
+            <p><strong>B.S. in Electronic and Computers Engineering</strong>, Sun Yat-sen University, Sep 2009 - Jun 2011</p>
+        </div>
+
+
+<!--         <div class="section">
+            <h2>Project Highlights</h2>
+            <p><strong>Project Title</strong> | Date</p>
+            <p>Description of the project, your role, and technologies used.</p>
+        </div>
+ -->
+            <!-- Repeat the above block for each relevant project -->
+
+    <p class="footer markdown-text">
+_Resume created with assistance from ChatGPT_
+    </p>
+    </div>
+    <script>
+        document.querySelectorAll('.markdown-text').forEach(el => {
+            el.innerHTML = marked.parse(el.innerHTML);
+        });
+    </script>
+</body>
+</html>
